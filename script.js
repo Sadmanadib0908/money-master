@@ -16,10 +16,10 @@ document.getElementById('submit-btn').addEventListener('click', function () {
     const totalExpense = (foodAmountFloat) + (rentAmountFloat) + (clothesAmountFloat)
     const newBalance = incomeAmountFloat - totalExpense
 
-    if ((foodAmountFloat || rentAmountFloat || clothesAmountFloat) > incomeAmountFloat) {
-        alert('You do not have enough income')
-    }
-    else if (incomeAmountFloat <= 0) {
+    // if ((foodAmountFloat || rentAmountFloat || clothesAmountFloat) > incomeAmountFloat) {
+    //     alert('You do not have enough income')
+    // }
+    if (incomeAmountFloat <= 0) {
         alert('Please give the income amount')
     }
     else if (isNaN(incomeAmountFloat) || isNaN(foodAmountFloat) || isNaN(rentAmountFloat) || isNaN(clothesAmountFloat)) {
