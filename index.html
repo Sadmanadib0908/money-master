@@ -11,33 +11,33 @@
 </head>
 
 <body>
-    <div class="grid grid-cols-1 md:grid-cols-2 m-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 m-3  md:m-12">
         <div>
             <img src="calculator.png" alt="">
         </div>
-        <div class="m-12 md:m-24">
+        <div class="m-6 md:m-24">
             <h1 class="text-5xl mb-12 text-center">Income</h1>
             <div class="flex">
                 <h3 class="text-2xl w-20 ">Income:</h3>
-                <input class="ml-5 border p-2 bg-slate-300" id="income-amount" type="number" name="" id=""  placeholder="Your Income">
+                <input class="ml-5 border w-1/4 md:3/4  p-2 bg-slate-300" id="income-amount" type="number" name="" id=""  placeholder="Your Income">
             </div>
             <h1 class="text-5xl mb-12 text-center mt-12">Expenses</h1>
             <div class="flex mb-5">
                 <h3 class="text-2xl w-20 ">Food:</h3>
-                <input class="ml-5 border p-2 bg-slate-300" id="food-amount" type="number" name="" id=""  placeholder="Food Cost" >
+                <input class="ml-5 border w-1/4 md:3/4 p-2 bg-slate-300" id="food-amount" type="number" name="" id=""  placeholder="Food Cost" >
             </div>
             <div class="flex mb-5">
                 <h3 class="text-2xl w-20 ">Rent:</h3>
-                <input class="ml-5 border p-2 bg-slate-300" id="rent-amount" type="number" name="" id=""  placeholder="Monthly Rent">
+                <input class="ml-5 border w-1/4 md:3/4 p-2 bg-slate-300" id="rent-amount" type="number" name="" id=""  placeholder="Monthly Rent">
             </div>
             <div class="flex mb-5">
                 <h3 class="text-2xl w-20 ">Clothes:</h3>
-                <input class="ml-5 border p-2 bg-slate-300" id="clothes-amount" type="number" name="" id=""  placeholder="Clothing cost">
+                <input class="ml-5 border w-1/4 md:3/4 p-2 bg-slate-300" id="clothes-amount" type="number" name="" id=""  placeholder="Clothing cost">
             </div>
-            <button class="bg-blue-500 text-white text-center p-4 w-1/4 mb-12" id="submit-btn">Submit</button>
+            <button class="bg-blue-500 text-white text-center p-4 md:w-1/4 mb-12" id="submit-btn">Submit</button>
             <h1 class="text-3xl text-center">Total Expenses:$<span id="expense-amount">0</span></h1>
             <h1 class="text-3xl text-center">Balance:$<span id="balance-amount">0</span></h1>
-            <button class="bg-blue-500 text-white text-center p-4 w-1/4 mt-12" id="refresh-btn">Refresh</button>
+            <button class="bg-blue-500 text-white text-center p-4 md:w-1/4 mt-12" id="refresh-btn">Refresh</button>
         </div>
     </div>
     <footer class="mb-auto">
