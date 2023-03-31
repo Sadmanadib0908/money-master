@@ -13,7 +13,8 @@ document.getElementById('submit-btn').addEventListener('click', function () {
     const clothesAmount = document.getElementById('clothes-amount')
     const clothesAmountFloat = parseFloat(clothesAmount.value)
 
-
+    const totalExpense = (foodAmountFloat) + (rentAmountFloat) + (clothesAmountFloat)
+    const newBalance = incomeAmountFloat - totalExpense
 
     if ((foodAmountFloat || rentAmountFloat || clothesAmountFloat) > incomeAmountFloat) {
         alert('You do not have enough income')
@@ -26,6 +27,9 @@ document.getElementById('submit-btn').addEventListener('click', function () {
     }
     else if ((foodAmountFloat < 0) || (rentAmountFloat < 0) || (clothesAmountFloat < 0)){
         alert('give the amount in positive')
+    }
+    else if (newBalance < 0){
+        alert('Your Expense is more than your income!!')
     }
     else {
         const expenseAmount = document.getElementById('expense-amount')
